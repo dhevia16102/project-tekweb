@@ -1,0 +1,1 @@
+(self.webpackChunkpikuniku=self.webpackChunkpikuniku||[]).push([[114],{3114:(u,e,n)=>{"use strict";n.r(e),n.d(e,{UtamaModule:()=>p});var t=n(1116),i=n(9624),k=n(6993),r=n(4295),s=n(6136),a=n(1041),c=n(5366);let p=(()=>{class u{}return u.\u0275fac=function(e){return new(e||u)},u.\u0275mod=c.oAB({type:u}),u.\u0275inj=c.cJS({imports:[[t.ez,i.b2,k.q,r.M,s.PW,a.u5]]}),u})()}}]);
