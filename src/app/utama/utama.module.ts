@@ -8,6 +8,7 @@ import { MaterialDesign } from '../material/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { WisataComponent } from './wisata/wisata.component';
 
 
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     BerandaComponent,
     UtamaComponent,
-    FooterComponent
+    FooterComponent,
+    WisataComponent
   ],
   imports: [
     CommonModule,

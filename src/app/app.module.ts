@@ -9,6 +9,9 @@ import { FooterComponent } from './utama/footer/footer.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ForgotComponent } from './auth/forgot/forgot.component';
+import { PublicComponent } from './public/public.component';
+import { MaterialDesign } from './material/material';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +20,14 @@ import { ForgotComponent } from './auth/forgot/forgot.component';
     UtamaComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotComponent
+    ForgotComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialDesign,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

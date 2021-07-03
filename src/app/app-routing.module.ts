@@ -2,8 +2,15 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { BerandaComponent } from './utama/beranda/beranda.component';
+import { WisataComponent } from './utama/wisata/wisata.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    redirectTo:'/beranda',
+    pathMatch:'full'
+  },
   {
     path:'login',
     component:LoginComponent
@@ -13,9 +20,12 @@ const routes: Routes = [
     component:RegisterComponent
   },
   {
-    path:'',
-    pathMatch:'full',
-    redirectTo:'/login'
+    path:'beranda',
+    component:BerandaComponent
+  },
+  {
+    path:'wisata',
+    component:WisataComponent
   }
 ];
 
