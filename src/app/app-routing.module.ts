@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { BerandaComponent } from './utama/beranda/beranda.component';
+import { BeritaComponent } from './utama/berita/berita.component';
+import { DukunganComponent } from './utama/dukungan/dukungan.component';
 import { WisataComponent } from './utama/wisata/wisata.component';
 
 const routes: Routes = [
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path:'wisata',
     component:WisataComponent
+  },
+  {
+    path:'berita',
+    component:BeritaComponent
+  },
+  {
+    path:'dukungan',
+    component:DukunganComponent
   }
 ];
 
