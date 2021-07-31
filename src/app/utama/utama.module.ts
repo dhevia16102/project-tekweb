@@ -11,9 +11,31 @@ import { FooterComponent } from './footer/footer.component';
 import { WisataComponent } from './wisata/wisata.component';
 import { BeritaComponent } from './berita/berita.component';
 import { DukunganComponent } from './dukungan/dukungan.component';
-import { EditComponent } from './berita/edit/edit.component';
+import { Routes } from '@angular/router';
+import { IsiBeritaComponent } from './berita/isi-berita/isi-berita.component';
 
-
+const routes: Routes =[
+    {
+      path:'beranda',
+      component:BerandaComponent
+    },
+    {
+      path:'wisata',
+      component:WisataComponent
+    },
+    {
+      path:'berita',
+      component:BeritaComponent
+    },
+    {
+      path:'dukungan',
+      component:DukunganComponent
+    },
+    {
+      path:'isi-berita',
+      component:IsiBeritaComponent
+    }
+]
 
 @NgModule({
   declarations: [
@@ -22,8 +44,7 @@ import { EditComponent } from './berita/edit/edit.component';
     FooterComponent,
     WisataComponent,
     BeritaComponent,
-    DukunganComponent,
-    EditComponent
+    DukunganComponent
   ],
   imports: [
     CommonModule,
