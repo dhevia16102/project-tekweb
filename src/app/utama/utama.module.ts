@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WisataComponent } from './wisata/wisata.component';
 import { BeritaComponent } from './berita/berita.component';
 import { DukunganComponent } from './dukungan/dukungan.component';
+import { EditComponent } from './berita/edit/edit.component';
 
 
 
@@ -21,7 +22,8 @@ import { DukunganComponent } from './dukungan/dukungan.component';
     FooterComponent,
     WisataComponent,
     BeritaComponent,
-    DukunganComponent
+    DukunganComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,

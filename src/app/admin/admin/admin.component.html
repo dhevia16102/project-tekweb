@@ -1,0 +1,42 @@
+<ng-container>
+    <!--toolbar-->
+    <mat-toolbar color="#00CED1" class="example-header">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dolan Yok - Berita</span>
+        <div class="uk-width-expand"></div>
+        <small>
+            <mat-icon matListIcon>account_box</mat-icon>
+        </small>
+    </mat-toolbar>
+    <!--end toolbar-->
+
+    <mat-sidenav-container class="example-container">
+
+        <mat-sidenav #sidenav mode="side" [position]="'start'" opened class="sidenav-left" [fixedInViewport]="true"
+            [fixedTopGap]="70" [fixedBottomGap]="0">
+
+            <mat-nav-list>
+                <mat-list-item routerLink="/admin/dashboard">
+                    <mat-icon matListIcon>dashboard</mat-icon>
+                    <h3 matLine>Dashboard</h3>
+                </mat-list-item>
+
+                <mat-list-item routerLink="/admin/product">
+                    <mat-icon matListIcon>description</mat-icon>
+                    <h3 matLine>Products</h3>
+                    </mat-list-item>         
+            </mat-nav-list>
+
+        </mat-sidenav>
+
+        <mat-sidenav #sidenav mode="side" [position]="'end'" class="example-sidenav" [fixedInViewport]="true"
+            [fixedTopGap]="60" [fixedBottomGap]="0">
+
+        </mat-sidenav>
+        <mat-sidenav-content style="padding: 20px; background-color: #ccc;">
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</ng-container>
