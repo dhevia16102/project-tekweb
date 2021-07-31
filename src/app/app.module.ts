@@ -16,7 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { WisataComponent } from './utama/wisata/wisata.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
@@ -44,7 +44,14 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     MatSliderModule,
     MatToolbarModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyDE0ih2-pLn1wIXDSVFpCrAxK0Y4hplydI",
+      authDomain: "data-berita.firebaseapp.com",
+      projectId: "data-berita",
+      storageBucket: "data-berita.appspot.com",
+      messagingSenderId: "452799654579",
+      appId: "1:452799654579:web:291915f2479de8da0f5ec6"
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
